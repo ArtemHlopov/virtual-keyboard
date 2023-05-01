@@ -28,6 +28,7 @@ h1,
   background-color: rgb(74, 73, 73);
   color: white;
   cursor: pointer;
+  transition: border-radius 0.3s, background-color 0.3s;
 }
 @media (hover: hover) {
   .key:hover {
@@ -44,7 +45,6 @@ h1,
 }
 .key_l.pressed {
   border-radius: 15px;
-  background-color: green;
 }
 
 .key_xl {
@@ -52,7 +52,6 @@ h1,
 }
 .key_xl.pressed {
   border-radius: 15px;
-  background-color: green;
 }
 
 .key_xxl {
@@ -60,7 +59,6 @@ h1,
 }
 .key_xxl.pressed {
   border-radius: 15px;
-  background-color: green;
 }
 
 .key__space {
@@ -68,7 +66,6 @@ h1,
 }
 .key__space.pressed {
   border-radius: 15px;
-  background-color: green;
 }
 
 .key__optional,
