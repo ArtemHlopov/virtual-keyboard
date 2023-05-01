@@ -1,0 +1,86 @@
+h1,
+.keyboard {
+  width: 900px;
+}
+.screan {
+  display: block;
+  width: 700px;
+  height: 200px;
+  margin: 10px auto 10px;
+  padding: 10px;
+  font-size: 18px;
+  color: #444444;
+}
+.keyboard {
+  width: 704px;
+  margin: 0 auto;
+  padding: 5px;
+  padding-left: 0;
+  padding-bottom: 0;
+  background: #888888;
+  border: 3px solid #222222;
+  border-radius: 5px;
+}
+.row {
+  margin: 5px;
+  display: flex;
+  width: 99%;
+  justify-content: space-between;
+}
+.key {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(74, 73, 73);
+  color: white;
+  cursor: pointer;
+  transition: border-radius 0.3s, background-color 0.3s;
+  @media (hover: hover) {
+    &:hover {
+      background-color: #79aa89;
+    }
+  }
+  &.pressed {
+    border-radius: 50%;
+    background-color: #2cfd72;
+  }
+}
+.key_l {
+  width: 50px;
+}
+.key_xl {
+  width: 84px;
+}
+.key_xxl {
+  width: 90px;
+}
+.key__space {
+  width: 330px;
+}
+.key_l,
+.key_xl,
+.key_xxl,
+.key__space {
+  &.pressed {
+    border-radius: 15px;
+  }
+}
+
+.key__optional,
+.key__arrow {
+  background-color: black;
+}
+.title,
+.description,
+.langSwitch {
+  margin: 10px auto;
+  text-align: center;
+}
+.title {
+  font-size: 30px;
+  color: rgba(101, 134, 177, 0.8);
+  -webkit-text-stroke: 1px rgba(114, 177, 101, 0.8);
+  -webkit-text-fill-color: rgba(101, 134, 177, 0.8);
+}
