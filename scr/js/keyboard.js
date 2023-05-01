@@ -1,20 +1,14 @@
 import { Key } from "./key.js";
-import { KEYDATA_EN } from "./keydata.js";
+import { KEYDATA_EN, KEYDATA_RU } from "./keydata.js";
 
 export class Keyboard {
   constructor(lang) {
     this.lang = lang;
   }
   render() {
-    if (!this.lang) {
-      this.lang = localStorage.getItem("keyboardLang")
-        ? localStorage.getItem("keyboardLang")
-        : "en";
-    }
-
     let data;
 
-    this.lang === "en" ? (data = KEYDATA_EN) : (data = "");
+    this.lang === "en" ? (data = KEYDATA_EN) : (data = KEYDATA_RU);
 
     let keyboardBlock = document.createElement("div");
     keyboardBlock.classList.add("wrapper");
@@ -25,6 +19,7 @@ export class Keyboard {
 
     let screan = document.createElement("textarea");
     screan.classList.add("screan");
+    screan.setAttribute("id", "screan");
 
     let keyboard = document.createElement("div");
     keyboard.classList.add("keyboard");
@@ -43,9 +38,20 @@ export class Keyboard {
       row.append(keyBlock);
     }
 
+    let description = document.createElement("div");
+    description.classList.add("description");
+    description.textContent =
+      "Клавиатура создана в операционной системе Windows";
+
+    let langSwitch = document.createElement("div");
+    langSwitch.classList.add("langSwitch");
+    langSwitch.textContent = "Для переключения языка комбинация: ctrl + alt";
+
     keyboardBlock.append(title);
     keyboardBlock.append(screan);
     keyboardBlock.append(keyboard);
+    keyboardBlock.append(description);
+    keyboardBlock.append(langSwitch);
 
     return keyboardBlock;
   }
