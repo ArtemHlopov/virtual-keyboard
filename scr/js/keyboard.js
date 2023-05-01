@@ -32,7 +32,7 @@ export class Keyboard {
     console.log(data);
     let row;
     for (let i = 0; i < data.length; i++) {
-      if (i == 0 || i == 13 || i == 28 || i == 41 || i == 54) {
+      if (i == 0 || i == 14 || i == 29 || i == 42 || i == 55) {
         row = document.createElement("div");
         row.classList.add("row");
         keyboard.append(row);

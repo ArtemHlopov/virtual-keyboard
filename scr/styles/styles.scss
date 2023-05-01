@@ -23,18 +23,44 @@ h1,
   align-items: center;
   background-color: rgb(74, 73, 73);
   color: white;
+  cursor: pointer;
+  @media (hover: hover) {
+    &:hover {
+      background-color: lightgreen;
+    }
+  }
+  &.pressed {
+    border-radius: 50%;
+    background-color: green;
+  }
 }
 .key_l {
   width: 50px;
+  &.pressed {
+    border-radius: 15px;
+    background-color: green;
+  }
 }
 .key_xl {
   width: 70px;
+  &.pressed {
+    border-radius: 15px;
+    background-color: green;
+  }
 }
 .key_xxl {
   width: 90px;
+  &.pressed {
+    border-radius: 15px;
+    background-color: green;
+  }
 }
 .key__space {
   width: 520px;
+  &.pressed {
+    border-radius: 15px;
+    background-color: green;
+  }
 }
 
 .key__optional,

@@ -27,22 +27,48 @@ h1,
   align-items: center;
   background-color: rgb(74, 73, 73);
   color: white;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .key:hover {
+    background-color: lightgreen;
+  }
+}
+.key.pressed {
+  border-radius: 50%;
+  background-color: green;
 }
 
 .key_l {
   width: 50px;
 }
+.key_l.pressed {
+  border-radius: 15px;
+  background-color: green;
+}
 
 .key_xl {
   width: 70px;
+}
+.key_xl.pressed {
+  border-radius: 15px;
+  background-color: green;
 }
 
 .key_xxl {
   width: 90px;
 }
+.key_xxl.pressed {
+  border-radius: 15px;
+  background-color: green;
+}
 
 .key__space {
   width: 520px;
+}
+.key__space.pressed {
+  border-radius: 15px;
+  background-color: green;
 }
 
 .key__optional,
