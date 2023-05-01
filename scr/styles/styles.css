@@ -4,18 +4,30 @@ h1,
 }
 
 .screan {
-  width: 900px;
-  height: 20vh;
+  display: block;
+  width: 700px;
+  height: 200px;
+  margin: 10px auto 10px;
+  padding: 10px;
+  font-size: 18px;
+  color: #444444;
 }
 
 .keyboard {
-  background-color: gray;
+  width: 704px;
+  margin: 0 auto;
+  padding: 5px;
+  padding-left: 0;
+  padding-bottom: 0;
+  background: #888888;
+  border: 3px solid #222222;
+  border-radius: 5px;
 }
 
 .row {
-  margin: 10px;
+  margin: 5px;
   display: flex;
-  width: 880px;
+  width: 99%;
   justify-content: space-between;
 }
 
@@ -32,38 +44,33 @@ h1,
 }
 @media (hover: hover) {
   .key:hover {
-    background-color: lightgreen;
+    background-color: #79aa89;
   }
 }
 .key.pressed {
   border-radius: 50%;
-  background-color: green;
+  background-color: #2cfd72;
 }
 
 .key_l {
   width: 50px;
 }
-.key_l.pressed {
-  border-radius: 15px;
-}
 
 .key_xl {
-  width: 70px;
-}
-.key_xl.pressed {
-  border-radius: 15px;
+  width: 84px;
 }
 
 .key_xxl {
   width: 90px;
 }
-.key_xxl.pressed {
-  border-radius: 15px;
-}
 
 .key__space {
-  width: 520px;
+  width: 330px;
 }
+
+.key_l.pressed,
+.key_xl.pressed,
+.key_xxl.pressed,
 .key__space.pressed {
   border-radius: 15px;
 }
@@ -71,6 +78,20 @@ h1,
 .key__optional,
 .key__arrow {
   background-color: black;
+}
+
+.title,
+.description,
+.langSwitch {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  color: rgba(101, 134, 177, 0.8);
+  -webkit-text-stroke: 1px rgba(114, 177, 101, 0.8);
+  -webkit-text-fill-color: rgba(101, 134, 177, 0.8);
 }
 
 /*# sourceMappingURL=styles.css.map */
