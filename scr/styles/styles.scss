@@ -2,23 +2,19 @@ h1,
 .keyboard {
   width: 900px;
 }
-
 .screan {
   width: 900px;
   height: 20vh;
 }
-
 .keyboard {
   background-color: gray;
 }
-
 .row {
   margin: 10px;
   display: flex;
   width: 880px;
   justify-content: space-between;
 }
-
 .key {
   height: 40px;
   width: 40px;
@@ -28,19 +24,15 @@ h1,
   background-color: rgb(74, 73, 73);
   color: white;
 }
-
 .key_l {
   width: 50px;
 }
-
 .key_xl {
   width: 70px;
 }
-
 .key_xxl {
   width: 90px;
 }
-
 .key__space {
   width: 520px;
 }
@@ -49,5 +41,3 @@ h1,
 .key__arrow {
   background-color: black;
 }
-
-/*# sourceMappingURL=styles.css.map */

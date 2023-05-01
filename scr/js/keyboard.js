@@ -19,6 +19,10 @@ export class Keyboard {
     let keyboardBlock = document.createElement("div");
     keyboardBlock.classList.add("wrapper");
 
+    let title = document.createElement("h1");
+    title.classList.add("title");
+    title.textContent = "RSS Виртуальная клавиатура";
+
     let screan = document.createElement("textarea");
     screan.classList.add("screan");
 
@@ -39,6 +43,7 @@ export class Keyboard {
       row.append(keyBlock);
     }
 
+    keyboardBlock.append(title);
     keyboardBlock.append(screan);
     keyboardBlock.append(keyboard);
 

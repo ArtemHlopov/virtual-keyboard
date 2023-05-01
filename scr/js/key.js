@@ -8,7 +8,7 @@ export class Key {
   }
   render() {
     let container = document.createElement("div");
-    container.textContent = this.value;
+    container.innerHTML = this.value;
     container.className = this.class;
     return container;
   }
